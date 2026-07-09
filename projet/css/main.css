@@ -1,0 +1,10 @@
+/* ===================================
+   MAIN — regroupe tous les partials
+   L'ORDRE COMPTE : variables et reset en premier
+   =================================== */
+@import url('variables.css');
+@import url('reset.css');
+@import url('components.css');
+@import url('header.css');
+@import url('team.css');
+@import url('footer.css');
