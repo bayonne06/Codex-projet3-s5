@@ -1,0 +1,92 @@
+/* ===================================
+   COMPONENTS — éléments réutilisables partout sur le site
+   =================================== */
+
+/* --- Bouton principal (contour cyan, se remplit au survol) --- */
+.btn {
+  display: inline-block;
+  padding: 16px 32px;
+  border: 2px solid var(--color-cyan);
+  color: var(--color-cyan);
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+.btn-nav{
+  background: var(--color-cyan);
+  display: inline-block;
+  padding: 3px;
+  border: 2px solid var(--color-cyan);
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background-color: var(--color-cyan);
+  color: var(--color-bg);
+}
+
+/* variante violette */
+.btn--secondary {
+  border-color: var(--color-purple);
+  color: var(--color-purple);
+}
+
+.btn--secondary:hover {
+  background-color: var(--color-purple);
+  color: var(--color-bg);
+}
+
+/* --- Champ de formulaire (style "underline", ex: newsletter) --- */
+.input {
+  width: 100%;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid var(--color-cyan);
+  color: var(--color-text);
+  padding: 12px 0;
+  font-size: 14px;
+}
+
+.input:focus {
+  outline: none;
+  border-bottom: 2px solid var(--color-cyan);
+}
+
+/* --- Badge / label (ex: "DEVELOPER", "CREATIVE DIRECTOR") --- */
+.badge {
+  display: inline-block;
+  font-family: var(--font-label);
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-cyan);
+  margin-bottom: 4px;
+}
+
+.badge--purple {
+  color: var(--color-purple);
+}
+
+/* --- Carte "glass" générique (fond flouté translucide) --- */
+.glass-card {
+  background: var(--color-card-bg);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px);
+}
+
+/* --- Liens d'icônes (partagés entre cartes équipe / footer) --- */
+.icon-link {
+  color: var(--color-cyan);
+  font-size: 20px;
+  transition: color 0.2s ease;
+}
+
+.icon-link:hover {
+  color: var(--color-cyan-light);
+}

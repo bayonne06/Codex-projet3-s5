@@ -1,0 +1,34 @@
+/* ===================================
+   VARIABLES — Codes couleur & polices
+   =================================== */
+:root {
+
+  /* --- Fonds (du plus sombre au plus clair) --- */
+  --color-bg: #131316;              /* fond principal de la page */
+  --color-bg-lowest: #0e0e11;       /* fond le plus sombre (footer) */
+  --color-bg-low: #1b1b1e;          /* fond des sections légèrement plus claires */
+  --color-card-bg: rgba(26, 26, 29, 0.6); /* fond translucide des cartes (effet glass) */
+
+  /* --- Couleurs d'accent néon --- */
+  --color-cyan: #00dbe9;            /* accent principal (cyan néon) */
+  --color-cyan-light: #7df4ff;      /* cyan plus clair (titres, logo) */
+  --color-purple: #ebb2ff;          /* accent secondaire (rose/violet néon) */
+
+  /* --- Textes --- */
+  --color-text: #e4e1e6;            /* texte principal (blanc cassé) */
+  --color-text-muted: #b9cacb;      /* texte secondaire (descriptions, sous-titres) */
+
+  /* --- Bordures / séparations --- */
+  --color-border: #3b494b;          /* bordures discrètes entre sections */
+
+  /* --- Typographies --- */
+  --font-heading: 'Space Grotesk', sans-serif;   /* titres */
+  --font-body: 'Hanken Grotesk', sans-serif;     /* texte courant */
+  --font-label: 'JetBrains Mono', monospace;     /* petits labels (ex: "DEVELOPER") */
+
+  /* --- Espacements réutilisables --- */
+  --gap: 24px;             /* espace entre les cartes de la grille */
+  --section-gap: 80px;     /* espace vertical entre grandes sections */
+  --container-max: 1280px; /* largeur max du contenu */
+  --radius: 4px;           /* arrondi des coins (le design est assez anguleux) */
+}
