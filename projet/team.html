@@ -1,154 +1,233 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Team | NEON PULSE</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EQUIPE | NEON PULSE</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Hanken+Grotesk:wght@400;500;600&family=JetBrains+Mono:wght@400;600&display=swap"
+        rel="stylesheet" />
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link rel="stylesheet" href="./css/main.css">
 
-  <!-- Polices -->
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=Hanken+Grotesk:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-
-  <!-- Un seul lien CSS : main.css importe le reste -->
-  <link rel="stylesheet" href="css/main.css">
 </head>
+
 <body>
 
-  <!-- HEADER -->
-  <header class="site-header">
-    <div class="logo">NEON PULSE</div>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="portfolio.html">Portfolio</a></li>
-        <li><a href="team.html" class="active" aria-current="page">Team</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li class="btn-nav"><a href="contact.html">Get Started</a></li>
-      </ul>
-    </nav>
-  </header>
+    <!-- ========== HEADER ========== -->
+    <header class="site-header">
+        <div class="logo">NEON<span style="color:var(--color-cyan);">PULSE</span></div>
+        <nav>
+            <ul>
+                <li><a href="index.html">ACCUEIL</a></li>
+                <li><a href="portfolio.html">PORTFOLIO</a></li>
+                <li><a href="team.html" class="active">EQUIPE</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li class="btn-nav"><a href="contact.html">GET STARTED</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <main>
-    <!-- SECTION EQUIPE -->
+    <!-- ========== EQUIPE SECTION ========== -->
     <section class="team-section">
-      <h2 class="team-section__title">Notre équipe</h2>
-      <p class="team-section__subtitle">Les talents derrière NEON PULSE.</p>
+        <h1 class="team-section__title">
+            NOTRE <span class="highlight">EQUIPE</span>
+        </h1>
+        <p class="team-section__subtitle">
+            Les talents derrière NEON PULSE
+        </p>
 
-      <div class="team-grid">
+        <!-- Grille des membres -->
+        <div class="team-grid">
 
-        <!-- Membre 1 -->
-        <article class="team-card glass-card">
-          <div class="team-card__image-wrapper">
-            <img class="team-card__image" src="images/avatar-placeholder.svg" alt="Kaizen Voss">
-          </div>
-          <div class="team-card__content">
-            <span class="badge">Creative Director</span>
-            <h3 class="team-card__name">Kaizen Voss</h3>
-            <div class="team-card__socials">
-              <a href="#" class="icon-link">🔗</a>
-              <a href="#" class="icon-link">🌐</a>
+            <!-- Membre 1 -->
+            <div class="team-card" style="background-image: url(voss.jpg);background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;">
+                <div class="team-card__image-wrapper">
+                    <div class="team-card__image-placeholder">
+                        <i class="fas fa-user-astronaut"></i>
+                    </div>
+                </div>
+                <div class="team-card__content">
+                    <span class="team-card__badge">Creative Director</span>
+                    <h3 class="team-card__name">BAYONNE Précieux</h3>
+                    <p class="team-card__role">EKE Le Terrifiant BABA VOSS</p>
+                    <div class="team-card__socials">
+                        <a href="#" class="icon-link"><i class="fab fa-discord"></i></a>
+                        <a href="#" class="icon-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="icon-link"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
             </div>
-          </div>
-        </article>
 
-        <!-- Membre 2 -->
-        <article class="team-card glass-card">
-          <div class="team-card__image-wrapper">
-            <img class="team-card__image" src="images/avatar-placeholder.svg" alt="Elara Sync">
-          </div>
-          <div class="team-card__content">
-            <span class="badge badge--purple">Lead Developer</span>
-            <h3 class="team-card__name">Elara Sync</h3>
-            <div class="team-card__socials">
-              <a href="#" class="icon-link">🔗</a>
-              <a href="#" class="icon-link">🌐</a>
+            <!-- Membre 2 -->
+            <div class="team-card" style="background-image: url(corbeau.jpg);background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;">
+                <div class="team-card__image-wrapper">
+                    <div class="team-card__image-placeholder">
+                        <i class="fas fa-user-ninja"></i>
+                    </div>
+                </div>
+                <div class="team-card__content">
+                    <span class="team-card__badge team-card__badge--purple">Lead Developer</span>
+                    <h3 class="team-card__name">JIZREEL Salem</h3>
+                    <p class="team-card__role">EKE Le Corbeau doré</p>
+                    <div class="team-card__socials">
+                        <a href="#" class="icon-link"><i class="fab fa-discord"></i></a>
+                        <a href="#" class="icon-link"><i class="fab fa-github"></i></a>
+                        <a href="#" class="icon-link"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
             </div>
-          </div>
-        </article>
 
-        <!-- Membre 3 -->
-        <article class="team-card glass-card">
-          <div class="team-card__image-wrapper">
-            <img class="team-card__image" src="images/avatar-placeholder.svg" alt="Jaxon Flux">
-          </div>
-          <div class="team-card__content">
-            <span class="badge">Photographer</span>
-            <h3 class="team-card__name">Jaxon Flux</h3>
-            <div class="team-card__socials">
-              <a href="#" class="icon-link">🔗</a>
-              <a href="#" class="icon-link">🌐</a>
+            <!-- Membre 3 -->
+            <div class="team-card" style="background-image: url(plume.jpg);background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;">
+                <div class="team-card__image-wrapper">
+                    <div class="team-card__image-placeholder">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                </div>
+                <div class="team-card__content">
+                    <span class="team-card__badge">Motion Designer</span>
+                    <h3 class="team-card__name">NKODIA Luc</h3>
+                    <p class="team-card__role">EKE La Plume </p>
+                    <div class="team-card__socials">
+                        <a href="#" class="icon-link"><i class="fab fa-discord"></i></a>
+                        <a href="#" class="icon-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="icon-link"><i class="fab fa-behance"></i></a>
+                    </div>
+                </div>
             </div>
-          </div>
-        </article>
 
-        <!-- Membre 4 -->
-        <article class="team-card glass-card">
-          <div class="team-card__image-wrapper">
-            <img class="team-card__image" src="images/avatar-placeholder.svg" alt="Mira Echo">
-          </div>
-          <div class="team-card__content">
-            <span class="badge badge--purple">Community Manager</span>
-            <h3 class="team-card__name">Mira Echo</h3>
-            <div class="team-card__socials">
-              <a href="#" class="icon-link">🔗</a>
-              <a href="#" class="icon-link">🌐</a>
+            <!-- Membre 4 -->
+            <div class="team-card" style="background-image: url(thunder.jpg);background-size: cover;
+                    background-position: center;
+                    background-repeat: no-repeat;">
+                <div class="team-card__image-wrapper">
+                    <div class="team-card__image-placeholder">
+                        <i class="fas fa-user-secret"></i>
+                    </div>
+                </div>
+                <div class="team-card__content">
+                    <span class="team-card__badge team-card__badge--purple">Esports Strategist</span>
+                    <h3 class="team-card__name">NDONGALA Dreche</h3>
+                    <p class="team-card__role">EKE Le Thunder Demon</p>
+                    <div class="team-card__socials">
+                        <a href="#" class="icon-link"><i class="fab fa-discord"></i></a>
+                        <a href="#" class="icon-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="icon-link"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
             </div>
-          </div>
-        </article>
 
-        <!-- Membre 5 : Akieni -->
-        <article class="team-card glass-card">
-          <div class="team-card__image-wrapper">
-            <img class="team-card__image" src="images/avatar-placeholder.svg" alt="Akieni">
-          </div>
-          <div class="team-card__content">
-            <span class="badge">Developer</span>
-            <h3 class="team-card__name">Akieni</h3>
-            <div class="team-card__socials">
-              <a href="#" class="icon-link">🔗</a>
-              <a href="#" class="icon-link">🌐</a>
+            <!-- Membre 5 -->
+            <div class="team-card" style="background-image: url(mother.jpg);background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;">
+                <div class="team-card__image-wrapper">
+                    <div class="team-card__image-placeholder">
+                        <i class="fas fa-user-graduate"></i>
+                    </div>
+                </div>
+                <div class="team-card__content">
+                    <span class="team-card__badge">UI/UX Designer</span>
+                    <h3 class="team-card__name">BOUESSO Darly</h3>
+                    <p class="team-card__role">EKE Le Mother Fucker</p>
+                    <div class="team-card__socials">
+                        <a href="#" class="icon-link"><i class="fab fa-discord"></i></a>
+                        <a href="#" class="icon-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="icon-link"><i class="fab fa-dribbble"></i></a>
+                    </div>
+                </div>
             </div>
-          </div>
-        </article>
 
-      </div>
+            <!-- Membre 6 -->
+            <div class="team-card" style="background-image: url(dark.jpg);background-size: cover;
+                    background-position: center;
+                    background-repeat: no-repeat;">
+                <div class="team-card__image-wrapper">
+                    <div class="team-card__image-placeholder">
+                        <i class="fas fa-user-cog"></i>
+                    </div>
+                </div>
+                <div class="team-card__content">
+                    <span class="team-card__badge team-card__badge--purple">DevOps Engineer</span>
+                    <h3 class="team-card__name">NGOUMA Euloge</h3>
+                    <p class="team-card__role">EKE Le Dark Master</p>
+                    <div class="team-card__socials">
+                        <a href="#" class="icon-link"><i class="fab fa-discord"></i></a>
+                        <a href="#" class="icon-link"><i class="fab fa-github"></i></a>
+                        <a href="#" class="icon-link"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
     </section>
 
-    <!-- CTA -->
-    <section class="team-section" style="text-align:center;">
-      <h2 class="team-section__title">Rejoignez l'équipe</h2>
-      <p class="team-section__subtitle">On recherche toujours des talents.</p>
-      <button class="btn">Voir les postes</button>
+    <!-- ========== TEAM STATS ========== -->
+    <section class="team-stats">
+        <div class="team-stat-item">
+            <div class="team-stat-number">5</div>
+            <div class="team-stat-label">Membres principaux</div>
+        </div>
+        <div class="team-stat-item">
+            <div class="team-stat-number">5</div>
+            <div class="team-stat-label">Pays</div>
+        </div>
+        <div class="team-stat-item">
+            <div class="team-stat-number">7</div>
+            <div class="team-stat-label">Rang Mondial </div>
+        </div>
+        <div class="team-stat-item">
+            <div class="team-stat-number">8</div>
+            <div class="team-stat-label">Brazza Awards Games</div>
+        </div>
+        <div class="team-stat-item">
+            <div class="team-stat-number">3</div>
+            <div class="team-stat-label">Manette d'Or</div>
+        </div>
     </section>
-  </main>
 
-  <!-- FOOTER -->
-  <footer class="site-footer">
-    <div class="site-footer__grid">
-      <div>
-        <div class="site-footer__logo">NEON PULSE</div>
-        <p class="site-footer__copyright">© 2024 NEON PULSE AGENCY</p>
-      </div>
-      <div>
-        <h4>Explorer</h4>
-        <div class="site-footer__links">
-          <a href="#">Confidentialité</a>
-          <a href="#">Conditions</a>
+    <!-- ========== FOOTER ========== -->
+    <footer class="site-footer">
+        <div class="site-footer__grid">
+            <div>
+                <div class="site-footer__logo">NEON PULSE</div>
+                <p class="site-footer__copyright">© 2024 NEON PULSE AGENCY</p>
+            </div>
+            <div>
+                <h4>Explorer</h4>
+                <div class="site-footer__links">
+                    <a href="#">Confidentialité</a>
+                    <a href="#">Conditions</a>
+                </div>
+            </div>
+            <div>
+                <h4>Réseaux</h4>
+                <div class="site-footer__links">
+                    <a href="#">Discord</a>
+                    <a href="#">Instagram</a>
+                    <a href="#">Twitter</a>
+                </div>
+            </div>
+            <div>
+                <h4>Newsletter</h4>
+                <input type="email" class="input" placeholder="Votre email">
+            </div>
         </div>
-      </div>
-      <div>
-        <h4>Réseaux</h4>
-        <div class="site-footer__links">
-          <a href="#">Discord</a>
-          <a href="#">Instagram</a>
-          <a href="#">Twitter</a>
-        </div>
-      </div>
-      <div>
-        <h4>Newsletter</h4>
-        <input type="email" class="input" placeholder="Votre email">
-      </div>
-    </div>
-  </footer>
+    </footer>
 
 </body>
+
 </html>

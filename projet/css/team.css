@@ -63,7 +63,7 @@
 }
 
 .team-card__image-wrapper {
-  height: 400px;
+  height: 200px;
   overflow: hidden;
 }
 
@@ -91,3 +91,43 @@
   display: flex;
   gap: 16px;
 }
+
+
+
+   .team-stats {
+            max-width: var(--container-max);
+            margin: 0 auto;
+            padding: 0 24px var(--section-gap);
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: var(--gap);
+            text-align: center;
+        }
+
+        .team-stat-item {
+            padding: 32px 16px;
+            border: 1px solid rgba(255, 255, 255, 0.04);
+            border-radius: 8px;
+            background: var(--color-bg-low);
+            transition: border-color 0.3s ease;
+        }
+
+        .team-stat-item:hover {
+            border-color: var(--color-cyan);
+        }
+
+        .team-stat-number {
+            font-size: 3rem;
+            font-weight: 700;
+            color: var(--color-cyan);
+            font-family: var(--font-heading);
+        }
+
+        .team-stat-label {
+            font-family: var(--font-label);
+            font-size: 12px;
+            color: var(--color-text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-top: 4px;
+        }
