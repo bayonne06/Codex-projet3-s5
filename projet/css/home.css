@@ -1,0 +1,269 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #050505;
+  color: white;
+  font-family: Poppins, sans-serif;
+}
+
+header {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  height: 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 26px;
+  color: #14f1ff;
+  font-family: Orbitron, sans-serif;
+  font-weight: bold;
+}
+
+.logo span {
+  color: #00ffff;
+}
+
+nav {
+  display: flex;
+  gap: 45px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  transition: .4s;
+}
+
+nav a:hover {
+  color: #00ffff;
+}
+
+.hero {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  min-height: 85vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hero-left {
+  width: 50%;
+}
+
+.small-title {
+  color: #00ffff;
+  letter-spacing: 4px;
+  margin-bottom: 25px;
+}
+
+.hero h1 {
+  font-size: 70px;
+  font-family: Orbitron, sans-serif;
+  line-height: 85px;
+}
+
+.hero h1 span {
+  color: #00ffff;
+}
+
+.description {
+  margin-top: 30px;
+  width: 500px;
+  color: #bdbdbd;
+  line-height: 30px;
+}
+
+.buttons {
+  margin-top: 40px;
+  display: flex;
+  gap: 20px;
+}
+
+.btn1 {
+  background: #00ffff;
+  color: black;
+  text-decoration: none;
+  padding: 15px 40px;
+  border-radius: 50px;
+  font-weight: bold;
+}
+
+.btn2 {
+  border: 2px solid #00ffff;
+  color: white;
+  text-decoration: none;
+  padding: 15px 40px;
+  border-radius: 50px;
+}
+
+.btn2:hover {
+  background: #00ffff;
+  color: black;
+}
+
+.hero-right {
+  width: 45%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.circle {
+  width: 450px;
+  height: 450px;
+  background: #00ffff;
+  border-radius: 50%;
+  position: absolute;
+  filter: blur(140px);
+  opacity: .25;
+}
+
+.hero-right img {
+  width: 500px;
+  position: relative;
+}
+
+.arsenal {
+  text-align: center;
+}
+
+.arsenal h1 span {
+  color: #00ffff;
+}
+
+.arsenal h1 {
+  font-size: 70px;
+  font-family: Orbitron, sans-serif;
+  line-height: 85px;
+}
+
+.services {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+}
+
+.left {
+  display: grid;
+  gap: 20px;
+}
+
+.card {
+  background: #18191c;
+  border: 1px solid #2a2b30;
+  position: relative;
+  overflow: hidden;
+}
+
+.large {
+  min-height: 210px;
+  padding: 35px;
+}
+
+.photo {
+  padding: 22px;
+}
+
+.icon {
+  color: #00d4ff;
+  font-size: 20px;
+  margin-bottom: 18px;
+}
+
+.card h2 {
+  font-size: 34px;
+  font-weight: 700;
+  margin-bottom: 18px;
+}
+
+.card p {
+  color: #9c9c9c;
+  line-height: 1.7;
+  width: 70%;
+  font-size: 15px;
+}
+
+.progress {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  display: flex;
+  gap: 2px;
+}
+
+.progress span {
+  height: 3px;
+  flex: 1;
+  background: #00d7ff;
+}
+
+.progress span:last-child {
+  background: #25515f;
+}
+
+.tags {
+  margin-top: 35px;
+  display: flex;
+  gap: 10px;
+}
+
+.tags span {
+  font-size: 11px;
+  color: #bdbdbd;
+  border: 1px solid #3a3a3a;
+  padding: 5px 9px;
+}
+
+.arrows {
+  position: absolute;
+  right: 35px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  gap: 18px;
+  font-size: 38px;
+  color: #303236;
+}
+
+.photo img {
+  width: 100%;
+  height: 330px;
+  object-fit: cover;
+  margin-bottom: 25px;
+}
+
+.photo h2 {
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+
+.photo p {
+  width: 100%;
+}
+
+@media (max-width: 900px) {
+  .services {
+    grid-template-columns: 1fr;
+  }
+
+  .card p {
+    width: 100%;
+  }
+
+  .photo img {
+    height: 250px;
+  }
+}
