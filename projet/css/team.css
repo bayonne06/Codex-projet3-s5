@@ -131,3 +131,11 @@
             letter-spacing: 0.1em;
             margin-top: 4px;
         }
+
+
+        .titre-stat{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-bottom: 50px;
+        }
